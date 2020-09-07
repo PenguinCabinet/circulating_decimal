@@ -73,7 +73,7 @@
                 alert("進数は2から36まで指定可能です。");
                 return {"ok":false,"data":null};
             }
-            let pattern=/[0-9]/;
+            let pattern=/[0-9a-z]/;
             if(c.split('').find((v)=>{return !pattern.test(v)})!=undefined){
                 alert("頭の部分の少数では数値しか入力出来ません(\"-\"等の記号が含まれています)。");
                 return {"ok":false,"data":null};
