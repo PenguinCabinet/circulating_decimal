@@ -115,7 +115,7 @@ function Get_func_Run(){
     document.getElementById("sample").innerHTML
     =
     `\\[
-        0.${ch}${c}${c}...
+        {0.${ch}${c}${c}...}_{(${p})}
     \\]
     `
     ;
@@ -124,7 +124,7 @@ function Get_func_Run(){
     document.getElementById("answer").innerHTML
     =
     `\\[
-        \\frac{${A[0].toString(p)}}{${A[1].toString(p)}} 
+        \\frac{${A[0].toString(p)}}{${A[1].toString(p)}}_{(${p})}
     \\]`
     ;
     MathJax.Hub.Queue(["Typeset",MathJax.Hub,"answer"]);
