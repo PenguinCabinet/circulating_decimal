@@ -14,7 +14,12 @@
     </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax
 /2.7.7/MathJax.js?config=TeX-AMS_CHTML"></script>
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
 
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
 </head>
 <body>
     <script src="main.js"></script>
@@ -33,7 +38,9 @@
     <input id="in_c" type="number" value="234"/>
     <br/>
 
-    <input type="button" onclick="Get_func_Run();" value="生成" />
+    <p>
+        <input class="uk-button uk-button-primary" type="button" onclick="Get_func_Run();" value="生成" />
+    </p>
     <br/>
     <br/>
 
@@ -45,7 +52,7 @@
     <div id="answer"></div>
     <br/>
 
-    <div>バグが残っている可能性もある為、作者は正確性を保証いたしません。</div>
+    <div class="uk-text-default">バグが残っている可能性もある為、作者は正確性を保証いたしません。</div>
 
     </div>
 </body>
